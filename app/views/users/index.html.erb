@@ -1,0 +1,13 @@
+<h1> Voici les listes des utilisateurs</h1>
+<p>
+<%@user.each do |user|%>
+	<br>
+	name :	 
+      <%= user.first_name%> 
+	last_name:
+	<%= user.last_name %> <br>
+	
+<%end%>
+
+</p>
+

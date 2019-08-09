@@ -1,0 +1,24 @@
+
+<h1>Voici la city: <%= @ville.name%> </h1>
+<p>Les potins échangés dans cette ville:</p>
+
+<div class="contener">
+<%user_in_city = @ville.users%>
+    <%user_in_city.length.times do |i|%>
+	<%gossip = user_in_city[i].gossips%>
+	<%gossip.length.times do |j|%>
+
+
+	
+
+<div class="card border-danger mb-3" style="max-width: 18rem;">	
+	
+  <div class="card-header"> <%=gossip[j].title%></div>
+  <div class="card-body text-danger">
+    <h5 class="card-title"><%=gossip[j].content%></h5>
+    <p class="card-text"></p>
+  </div>
+</div>
+  <%end%>
+    <%end%>
+</div>
